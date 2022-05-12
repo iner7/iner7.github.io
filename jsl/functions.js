@@ -64,8 +64,8 @@ function fib(n) {
  *  Если y меньше, чем x, то возвращается false
  *  Если значения равны, то возвращается null
  *
- * @param {BigInt} x целочисленное число.
- * @return {BigInt}   Анонимная функция.
+ * @param {number} x целочисленное число.
+ * @return {function}   Анонимная функция.
  */
  function compare(x) {
     return (y) => {
@@ -78,8 +78,8 @@ function fib(n) {
 /**
  *  и выводит числа от 0 до num в красивом японском виде в консоль
  *
- * @param {BigInt} num конечное число 
- * @param {BigInt} cols количество колонок
+ * @param {number} num конечное число 
+ * @param {number} cols количество колонок
  */
  function printNumbers(num, cols) {
     let r = Math.ceil(num / cols);
