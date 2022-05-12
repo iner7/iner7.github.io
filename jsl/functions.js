@@ -74,3 +74,23 @@ function fib(n) {
         else return null;
     };
 }
+
+/**
+ *  и выводит числа от 0 до num в красивом японском виде в консоль
+ *
+ * @param {BigInt} num конечное число 
+ * @param {BigInt} cols количество колонок
+ */
+ function printNumbers(x) {
+    let r = Math.ceil(num / cols);
+
+    for (let i = 0; i < r; i++) {
+        let s = "";
+        for (let j = 0; j < cols; j++) {
+            let nm = i*cols + j;
+            if (nm < num) s += nm + "\t";
+        }
+
+        console.log(s);
+    }
+}
