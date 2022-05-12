@@ -87,7 +87,7 @@ function fib(n) {
     for (let i = 0; i < r; i++) {
         let s = "";
         for (let j = 0; j < cols; j++) {
-            let nm = i*cols + j;
+            let nm = j*cols + i;
             if (nm < num) s += nm + "\t";
         }
 
