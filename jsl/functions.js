@@ -67,7 +67,7 @@ function fib(n) {
  * @param {number} x целочисленное число.
  * @return {function}   Анонимная функция.
  */
- function compare(x) {
+function compare(x) {
     return (y) => {
         if (y > x) return true;
         else if (y < x) return false;
@@ -81,7 +81,7 @@ function fib(n) {
  * @param {number} num конечное число 
  * @param {number} cols количество колонок
  */
- function printNumbers(num, cols) {
+function printNumbers(num, cols) {
     let r = Math.ceil(num / cols);
 
     for (let i = 0; i < r; i++) {
