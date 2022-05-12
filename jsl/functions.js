@@ -46,7 +46,7 @@ function fib(n) {
     if (n==1) return 0;
     let a = 1n;
     let b = 1n;
-    let ni = n-1n;
+    let ni = n - 1n;
     for (let i = 3n; i <= ni; i++) {
         let c = a + b;
         a = b;
