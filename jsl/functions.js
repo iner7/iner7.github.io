@@ -17,7 +17,7 @@ function pow(x, n) {
  * @param {number} n натурального число.
  * @return {number}  сумму чисел от 1 до n. 
  */
- function sumTo(n) {
+function sumTo(n) {
     let s = 1;
     for (let i = 2; i <= n; i++) {
         s += i;
@@ -31,7 +31,18 @@ function pow(x, n) {
  * @param {number} n натурального число.
  * @return {number}  факториал n. 
  */
- function factorial(n) {
+function factorial(n) {
     if (n == 0 || n == 1) return 1;
     return n * factorial(n - 1);
+}
+
+/**
+ *  возвращает n-е число Фибоначчи.
+ *
+ * @param {BigInt} n натурального число.
+ * @return {BigInt}   n-е число Фибоначчи.
+ */
+function fib(n) {
+    if (n < 2) return n;
+    return fib(n - 1) + fib(n - 2);
 }
