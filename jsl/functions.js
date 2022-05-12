@@ -43,13 +43,13 @@ function factorial(n) {
  * @return {BigInt}   n-е число Фибоначчи.
  */
 function fib(n) {
-    var i;
-    var fib = [];
-    fib[0] = 0n;
-    fib[1] = 1n;
-    for (i = 2n; i <= n; i++) {
-      fib[i] = BigInt(BigInt(fib[i - 2]) + BigInt(fib[i - 1]));
+    let x = 1n;
+    let y = 1n;
+
+    for (let i = 2n; i < n; i++) {
+        y = x + y;
+        x = y - x;
     }
 
-    return fib.at(-1);
+    return y;
 }
