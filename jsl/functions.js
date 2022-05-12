@@ -68,7 +68,7 @@ function fib(n) {
  * @return {BigInt}   Анонимная функция.
  */
  function compare(x) {
-    myFuncB = (y) => {
+    return (y) => {
         if (y > x) return true;
         else if (y < x) return false;
         else return null;
