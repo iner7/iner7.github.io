@@ -81,7 +81,7 @@ function fib(n) {
  * @param {BigInt} num конечное число 
  * @param {BigInt} cols количество колонок
  */
- function printNumbers(x) {
+ function printNumbers(num, cols) {
     let r = Math.ceil(num / cols);
 
     for (let i = 0; i < r; i++) {
