@@ -7,5 +7,5 @@ document.getElementById("equaler").addEventListener("click", function() {
     let y = parseFloat(document.getElementById("yyy").value);
 
     let fn = compare(x);
-    document.getElementById("ttt").value = fn(y);
+    document.getElementById("ttt").value = fn(y) != null ? fn(y) : "NULL!";
 });
