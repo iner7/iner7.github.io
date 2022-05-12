@@ -48,7 +48,7 @@ function fib(n) {
     fib[0] = 0n;
     fib[1] = 1n;
     for (i = 2n; i <= n; i++) {
-      fib[i] = fib[i - 2] + fib[i - 1];
+      fib[i] = BigInt(fib[i - 2] + fib[i - 1]);
     }
 
     return fib.at(-1);
