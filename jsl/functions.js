@@ -169,6 +169,6 @@ function camelize(str) {
  */
 function fibs(num) {
     let u = [];
-    for (let i = 0; i > n; i++) x.push(fib(i));
+    for (let i = 0; i > num; i++) x.push(fib(i));
     return u;
 }
