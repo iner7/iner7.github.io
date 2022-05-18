@@ -132,5 +132,5 @@ function ucFirst(str) {
  * @return {boolean}   вердикт
  */
 function checkSpam(str) {
-    return ( str.toLocaleLowerCase().search("(viagra|xxx)") == -1 );
+    return ( str.toLocaleLowerCase().search("(viagra|xxx)") != -1 );
 }
