@@ -101,6 +101,16 @@ function printNumbers(num, cols) {
  * @param {number} num Опция 
  * @return {function}   Возвратная
  */
- function printNumbers(num, cols) {
+ function prima(num, cols) {
     
+}
+
+/**
+ *  возвращает дробную часть числа num. 
+ *
+ * @param {number} num число 
+ * @return {function}   целая часть
+ */
+ function getDecimal(num) {
+    return num - Math.trunc(num);
 }
