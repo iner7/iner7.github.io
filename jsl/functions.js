@@ -143,6 +143,6 @@ function checkSpam(str) {
  * @return {string}   строка
  */
 function truncate(str, maxlength) {
-    if (str.length > maxlength) return str;
-    else return si.slice(0, maxlength-1) + "\u2026"
+    if (str.length <= maxlength) return str;
+    else return str.slice(0, maxlength-1) + "\u2026"
 }
