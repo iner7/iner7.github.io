@@ -157,3 +157,13 @@ function fibs(num) {
     for (let i = 1; i <= num; i++) u.push(fib(i));
     return u;
 }
+
+/**
+ * возвращает массив из тех же элементов, но отсортированный по убыванию. 
+ *
+ * @param {Array} arr массив 
+ * @return {Array}   массив
+ */
+ function arrReverseSorted(arr) {
+    return arr.sort(function(a, b) { return b - a; });
+}
