@@ -39,7 +39,8 @@ function factorial(n) {
  * @return {BigInt}   n-е число Фибоначчи.
  */
 function fib(n) {
-    if (n==1) return 0;
+    if (n==0) return 0;
+    if (n==1) return 1;
     let a = 1n;
     let b = 1n;
     let ni = n - 1;
