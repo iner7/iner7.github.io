@@ -146,3 +146,17 @@ function truncate(str, maxlength) {
     if (str.length <= maxlength) return str;
     else return str.slice(0, maxlength-1) + "\u2026"
 }
+
+/**
+ * преобразуйте строку вида 'var-test-text' в 'varTestText'. 
+ * То есть, дефисы удаляются, а все слова после них 
+ * получают заглавную букву. Функция должна работать с любыми аналогичными строками. 
+ *
+ * @param {string} str строка 
+ * @return {string}   строка
+ */
+function camelize(str) {
+    return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function(word, index) {
+        return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    }).replace(/\s+/g, '');
+}
