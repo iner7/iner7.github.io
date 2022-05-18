@@ -122,5 +122,15 @@ function getDecimal(num) {
  * @return {string}   строка
  */
 function ucFirst(str) {
-    return str[0].toLocaleLowerCase() + str.slice(1, str.length);
+    return str[0].toLocaleUpperCase() + str.slice(1, str.length);
+}
+
+/**
+ *  возвращает true, если строка str содержит 'viagra' или 'XXX', а иначе false. Функция должна быть нечувствительна к регистру. 
+ *
+ * @param {string} str строка 
+ * @return {boolean}   вердикт
+ */
+function checkSpam(str) {
+    return ( str.toLocaleLowerCase().search("(viagra|xxx)") == -1 );
 }
