@@ -46,7 +46,7 @@ function fib(n) {
     if (n==1) return 0;
     let a = 1n;
     let b = 1n;
-    let ni = n - 1n;
+    let ni = n - 1;
     for (let i = 3n; i <= ni; i++) {
         let c = a + b;
         a = b;
@@ -113,15 +113,17 @@ function prima(num) {
  */
 function getDecimal(num) {
     return num - Math.floor(num);
-}
-
-/**
- * которая возвращает строку str с заглавным первым символом. 
+}/**
+ * для натурального n возвращает массив, заполненный числами Фибоначчи до n-го (не включая его). 
  *
- * @param {string} str строка 
- * @return {string}   строка
+ * @param {number} num число 
+ * @return {Array}   массив чисел
  */
-function ucFirst(str) {
+function fibs(num) {
+    let u = [];
+    for (let i = 0; i > n; i++) x.push(fib(i));
+    return u;
+}st(str) {
     return str[0].toLocaleUpperCase() + str.slice(1, str.length);
 }
 
