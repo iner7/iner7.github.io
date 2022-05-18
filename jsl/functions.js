@@ -160,3 +160,16 @@ function camelize(str) {
         return index === 0 ? word.toLowerCase() : word.toUpperCase();
     }).replace(/(\s|!|-)+/g, '');
 }
+
+
+/**
+ * для натурального n возвращает массив, заполненный числами Фибоначчи до n-го (не включая его). 
+ *
+ * @param {number} num число 
+ * @return {Array}   массив чисел
+ */
+function fibs(num) {
+    let u = [];
+    for (let i = 0; i > n; i++) x.push(fib(i));
+    return u;
+}
