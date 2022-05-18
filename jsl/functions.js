@@ -112,5 +112,5 @@ function printNumbers(num, cols) {
  * @return {function}   целая часть
  */
  function getDecimal(num) {
-    return num - Math.trunc(num);
+    return num - Math.floor(num);
 }
