@@ -94,3 +94,13 @@ function printNumbers(num, cols) {
         console.log(s);
     }
 }
+
+/**
+ * ОПИСАНИЕ
+ *
+ * @param {number} num Опция 
+ * @return {function}   Возвратная
+ */
+ function printNumbers(num, cols) {
+    
+}
