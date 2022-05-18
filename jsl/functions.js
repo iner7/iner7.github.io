@@ -101,7 +101,7 @@ function printNumbers(num, cols) {
  * @param {number} num Опция 
  * @return {function}   Возвратная
  */
-function prima(num, cols) {
+function prima(num) {
     
 }
 
@@ -109,7 +109,7 @@ function prima(num, cols) {
  *  возвращает дробную часть числа num. 
  *
  * @param {number} num число 
- * @return {function}   целая часть
+ * @return {number}   целая часть
  */
 function getDecimal(num) {
     return num - Math.floor(num);
@@ -118,11 +118,11 @@ function getDecimal(num) {
 /**
  * которая возвращает строку str с заглавным первым символом. 
  *
- * @param {number} str строка 
- * @return {function}   строка
+ * @param {string} str строка 
+ * @return {string}   строка
  */
 function ucFirst(str) {
     let str2 = str;
-    str2[0] = str2[0].toUpperCase();
+    str2.charAt(0) = str2.charAt(0).toUpperCase();
     return str2;
 }
