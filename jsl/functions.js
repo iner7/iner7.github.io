@@ -122,7 +122,5 @@ function getDecimal(num) {
  * @return {string}   строка
  */
 function ucFirst(str) {
-    let str2 = str;
-    str2.charAt(0) = str2.charAt(0).toUpperCase();
-    return str2;
+    return str[0].toLocaleLowerCase() + str.slice(1, str.length);
 }
