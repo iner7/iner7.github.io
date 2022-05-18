@@ -166,7 +166,8 @@ function fibs(num) {
  * @return {Array}   массив
  */
  function arrReverseSorted(arr) {
-    return arr.sort(function(a, b) { return b - a; });
+    let arr2 = arr.slice();
+    return arr2.sort(function(a, b) { return b - a; });
 }
 
 
