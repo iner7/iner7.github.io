@@ -41,8 +41,8 @@ function factorial(n) {
 function fib(n) {
     if (n==0) return 0n;
     if (n==1) return 1n;
-    let a = 0n;
-    let b = 1n;
+    let a = 1n;
+    let b = 0n;
     let ni = n - 1;
     for (let i = 3n; i <= ni; i++) {
         let c = a + b;
