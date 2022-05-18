@@ -167,3 +167,16 @@ function fibs(num) {
  function arrReverseSorted(arr) {
     return arr.sort(function(a, b) { return b - a; });
 }
+
+
+/**
+ * которая возвращает сумму всех своих аргументов. 
+ *
+ * @param {number} ...args числа 
+ * @return {Array}   сумма чисел
+ */
+ function sum(...args) {
+    var su = 0; 
+    for (var i = 0; i < args.length; i++) su += args[i];
+    return su;
+}
