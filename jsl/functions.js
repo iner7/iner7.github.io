@@ -134,3 +134,15 @@ function ucFirst(str) {
 function checkSpam(str) {
     return ( str.toLocaleLowerCase().search("(viagra|xxx)") != -1 );
 }
+
+/**
+ * которая проверяет длину строки str, и если она превосходит maxlength – заменяет конец str на символ многоточие "…"
+ *
+ * @param {string} str строка 
+ * @param {number} maxlength длина 
+ * @return {string}   строка
+ */
+function truncate(str, maxlength) {
+    if (str.length > maxlength) return str;
+    else return si.slice(0, maxlength-1) + "\u2026"
+}
